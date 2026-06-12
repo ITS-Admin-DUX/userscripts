@@ -182,13 +182,6 @@
                 ? range.commonAncestorContainer
                 : range.commonAncestorContainer.parentElement;
 
-        const isTargeted = container?.closest?.(
-            SELECTORS.join(',')
-        );
-
-        if (!isTargeted) {
-            return;
-        }
 
         let text = selection.toString();
 
